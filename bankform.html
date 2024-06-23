@@ -1,0 +1,57 @@
+<html>
+<head>
+<h1 align="center">BANK FORM</h1>
+</head>
+<body>
+
+<form name="f1" method="post">
+<fieldset> <legend> AUTHENTICATION</legend>
+<table>
+<tr> <td> USER : </td> <td> <input type="text" name="tus"> </td> </tr>
+<tr> <td> PASSWORD : </td> <td> <input type="password" name="tpa"> </td> </tr>
+<!-- to get the proper layout we use table -->
+</table>
+</fieldset>
+
+<br>
+ADDRESS : <textarea name="tad" rows=5 cols=20> </textarea><br>
+
+<br>
+GENDER : <input type="radio" name="gen" value="MALE"> MALE
+	 <input type="radio" name="gen" value="FEMALE"> FEMALE
+	 <input type="radio" name="gen" value="OTHER"> OTHER <br>
+
+<br>
+A/C TYPE : <select name="act">
+		<option value="CURRENT">CURRENT</option>
+		<option value="SAVING">SAVING</option>
+		<option value="FIXED DEPOSIT">FIXED DEPOSIT</option>
+	   </select> <br>
+
+<br>
+CITY : <select name="city">
+		<optgroup label="GUJARAT">
+			<option value="VADAODARA">VADODARA</option>
+			<option value="SURAT">SURAT</option>
+		</optgroup>
+		<optgroup label="PUNJAB">
+			<option value="CHANDIGARH">CHANDIGARH</option>
+			<option value="BHATINDA">BHATINDA</option>
+		</optgroup>
+	</select>
+
+<br>
+HOBBIES : <input type="checkbox" name="c1" value="SING">SING
+	  <input type="checkbox" name="c2" value="DANCE">DANCE
+	  <input type="checkbox" name="c3" value="SPORTS">SPORTS
+	  <input type="checkbox" name="c4" value="SWIM">SWIM <br>	
+
+<br>
+FILE NAME : <input type="file" name="upload"> <br>
+
+<br><input type="submit" name="sub" value="SUBMIT">
+<input type="reset" name="res" value="CANCEL">
+
+</form>
+</body>
+</html>

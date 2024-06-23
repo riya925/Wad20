@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<script>
+
+function change()
+{
+document.getElementById("abc").innerHTML="COUNTING....";
+}
+var c=0;
+function countme()
+{
+c++;
+document.getElementById("abc").innerHTML="COUNT : "+c;
+}
+
+</script>
+
+</head>
+<body onload="change()">
+
+<input type="button" name="b1" value="CLICK ME" onclick="countme()">
+
+<br><br>
+
+<div id="abc"></div>
+
+</body>
+</html>

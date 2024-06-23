@@ -1,0 +1,28 @@
+<html>
+<head>
+
+<h1 id="abc" align="center"></h1>
+
+<script>
+
+var ban="COMPACT COMPUTER INSTITUTE";
+
+function banner()
+{
+document.getElementById("abc").innerHTML=ban;
+var ch=ban.charAt(0);
+ban=ban.substring(1,ban.length);
+ban=ban+ch;
+setTimeout("banner()",100);
+}
+
+banner();
+
+</script>
+
+</head>
+<body>
+
+
+</body>
+</html>

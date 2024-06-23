@@ -1,0 +1,45 @@
+<html>
+<head>
+
+<style>
+.mydes
+{
+font-size:20pt;
+color:white;
+cursor:hand;
+padding-left:10pt;
+}
+
+</style>
+
+<script>
+
+function show(a)
+{
+var e=document.getElementById("output");
+e.innerHTML="<object type='text/html' data="+a+" width=1250 height=500>";
+}
+</script>
+
+</head>
+<body>
+
+<div style="position:absolute;left:0pt;top:0pt;width:1400pt;height:100pt;background-image:url('i1.jpg')">
+<div style="position:absolute;left:0pt;top:100pt;width:150pt;height:400pt;background-color:grey" class="mydes">
+<div onclick="show('first.html')"> first </div>
+<div onclick="show('second.html')"> second </div>
+<div onclick="show('bankform.html')"> bankform </div>
+<div onclick="show('logincss.html')"> logincss </div>
+<div onclick="show('abs_rel.html')"> abs_rel </div>
+<div onclick="show('logindesign.html')"> logindesign </div>
+
+</div>
+
+<div style="position:absolute;left:150pt;top:100pt;width:1250pt;height:400pt;" id="output">
+
+</div>
+
+
+
+</body>
+</html>

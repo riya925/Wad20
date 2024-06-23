@@ -1,0 +1,43 @@
+<!-- javascript is a client side scripting ie everything should be done on same browser -->
+<!-- javascript-normal serverside scripting-submit button -->
+
+<html>
+<head>
+
+<script>
+
+function add()
+{
+var a=parseInt(f1.t1.value);
+var b=parseInt(f1.t2.value);
+var c=a+b;
+
+//alert("ADD = "+c);
+//document.write("<br> ADD = "+c);
+//f1.t3.value="ADD = "+c;
+var e=document.getElementById("aa");
+e.innerHTML="ADD = "+c;
+}
+
+</script>
+
+</head>
+<body>
+
+<form name="f1">
+
+ENTER NO1 : <input type="text" name="t1"> <br><br>
+ENTER NO2 : <input type="text" name="t2"> <br><br>
+
+<input type="button" name="b1" value="add" onclick="add()">
+<input type="reset" name="res" value="cancel">
+<br><br>
+
+<!-- <input type="text" name="t3"> -->
+
+</form>
+
+<div id="aa"> ANS HERE </div>
+
+</body>
+</html>

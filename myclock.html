@@ -1,0 +1,33 @@
+<html>
+<head>
+<h1 id="abc" style="position:absolute;left:150pt;top:50pt;width:450pt;height:30pt;background-color:purple">
+MY CLOCK</h1>
+<script>
+
+function myclock()
+{
+var e=document.getElementById("abc");
+
+var d=new Date();
+var h=d.getHours();
+var m=d.getMinutes();
+var s=d.getSeconds();
+var dd=d.getDate();
+var mm=d.getMonth();
+mm++;
+var yy=d.getFullYear();
+e.innerHTML="DATE ="+dd+"/"+mm+"/"+yy+"TIME = "+h+":"+m+":"+s;
+window.status="DATE ="+dd+"/"+mm+"/"+yy+"TIME = "+h+":"+m+":"+s;
+setInterval("myclock()",1000);
+
+}
+
+myclock();
+
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

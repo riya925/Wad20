@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<script>
+
+function add()
+{
+var e=document.getElementById("abc");
+var s=0;
+for(i=0;i<f1.tno.length;i++)
+{
+s=s+parseInt(f1.tno[i].value);
+}
+e.innerHTML=s;
+}
+
+</script>
+
+</head>
+<body>
+
+<form name="f1">
+
+<script>
+for(i=1;i<=10;i++)
+{
+document.write("ENTER NO"+i+": <input type='text' name='tno'> <br>");
+}
+</script>
+
+<input type="button" name="b1" value="ADD" onclick="add()">
+</form>
+<br><br>
+
+<div id="abc"></div>
+
+</body>
+</html>

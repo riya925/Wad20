@@ -1,0 +1,38 @@
+<html>
+<head>
+
+<script>
+
+function myrev()
+{
+var data=f1.str.value;
+var rev="";
+for(i=data.length;i>=0;i--)
+{
+rev=rev+data.charAt(i);
+}
+
+f1.str.value=rev;
+}
+
+
+</script>
+
+</head>
+<body>
+
+
+<form name="f1">
+
+enter string : <input type="text" name="str"> <br><br>
+
+<input type="button" name="b1" value="REVERSE" onclick="myrev()">
+
+</form>
+
+<br><br>
+
+
+
+</body>
+</html>
